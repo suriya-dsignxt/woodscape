@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<title>Manual Scroll Slider</title>
+
+<style>
+
+/* ===== Slider Container ===== */
+.square-slider {
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+/* Scroll Row */
+.scroll-row {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scroll-behavior: smooth;
+}
+
+/* Square Cards */
+.square {
+    min-width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.square:hover {
+    background: #dc3545;
+    color: white;
+}
+
+/* Scrollbar Design */
+.scroll-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-row::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll-row::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.scroll-row:hover::-webkit-scrollbar-thumb {
+    background: #dc3545;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<!-- ===== YOUR SECTION ===== -->
+
+<section class="Commerical-Constraction container-fluid d-flex flex-wrap">
+    <div class="sideimg">
+        <img src="images/interior-banner.png" alt="" width="750px" class="h-100">
+    </div>
+
+    <div class="content">
+        <h2 class="ms-5" style="font-size: 70px; margin-top: 100px;">
+            Commercial <br> Interiors
+        </h2>
+
+        <p class="ms-5 mt-5 mb-5">
+            Turnkey office, retail, and hospitality interiors designed to perform, impress, and open on schedule.
+        </p>
+
+        <div class="form-check ms-5 mt-3">
+            <input class="form-check-input" type="checkbox" checked>
+            <label class="form-check-label fs-5 fw-bold ms-3">Fit-outs and joinery</label>
+        </div>
+
+        <div class="form-check ms-5 mt-3">
+            <input class="form-check-input" type="checkbox" checked>
+            <label class="form-check-label fs-5 fw-bold ms-3">FF&E procurement</label>
+        </div>
+
+        <div class="form-check ms-5 mt-3">
+            <input class="form-check-input" type="checkbox" checked>
+            <label class="form-check-label fs-5 fw-bold ms-3">Brand compliance</label>
+        </div>
+
+        <div class="form-check ms-5 mt-3">
+            <input class="form-check-input" type="checkbox" checked>
+            <label class="form-check-label fs-5 fw-bold ms-3">Fast delivery</label>
+        </div>
+
+        <div class="d-flex mt-5 ms-5">
+            <button class="btn btn-dark w-75 px-3">
+                Request Interiors Estimate
+            </button>
+            <a class="btn btn-danger text-white ms-2" href="#">↗</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== MANUAL SCROLL SQUARES ===== -->
+
+<div class="square-slider container-fluid">
+
+    <div class="scroll-row">
+
+        <div class="square">Design</div>
+        <div class="square">Planning</div>
+        <div class="square">Execution</div>
+        <div class="square">Furniture</div>
+        <div class="square">Lighting</div>
+        <div class="square">Branding</div>
+        <div class="square">Retail</div>
+        <div class="square">Office</div>
+        <div class="square">Hospitality</div>
+        <div class="square">Joinery</div>
+        <div class="square">Fit-outs</div>
+        <div class="square">Procurement</div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
