@@ -108,6 +108,25 @@
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='red' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.485 1.929a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06 0L1.454 7.457a.75.75 0 111.06-1.06l3.25 3.25 7.72-7.718z'/%3e%3c/svg%3e");
 }
 
+.sideimg{
+    width:50%;
+    min-height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.sideimg-1{
+    background-image:url('../images/constraction-banner.png');
+    background-size: contain;
+    background-position: center;
+}
+
+/* .sideimg-2{
+    background-image:url('../images/interior-banner.png');
+} */
+
+
 /* ===== Card Design ===== */
 .success-story .container .square {
     height: 400px;
