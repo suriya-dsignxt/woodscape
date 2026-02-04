@@ -199,4 +199,91 @@
     flex-direction: column;
     justify-content: center;
 }
+/* ===== Card Design ===== */
+.why-woodscape .container .square {
+    height: 400px;
+    width: 350px;
+    min-width: 350px;   /* ⭐ prevents shrinking */
+    background-color: #fff;
+    flex-shrink: 0;     /* ⭐ keeps card size */
 
+    /* Cut bottom-right corner */
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 80%,
+        80% 100%,
+        0 100%
+    );
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.featured-case-study .container .square1 {
+    height: 400px;
+    width: 525px;
+    min-width: 350px;   /* ⭐ prevents shrinking */
+    background-image: url("../images/before.png");
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;     /* ⭐ keeps card size */
+
+    /* Cut bottom-right corner */
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 80%,
+        80% 100%,
+        0 100%
+    );
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.featured-case-study .container .square1 .tag-label {
+    width: 70px;
+    height: 35px;
+    background-color: #e60024;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.featured-case-study .container .square3 {
+    height: 400px;
+    width: 525px;
+    min-width: 350px;   /* ⭐ prevents shrinking */
+    background-image: url("../images/after.png");
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;     /* ⭐ keeps card size */
+
+    /* Cut bottom-right corner */
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 80%,
+        80% 100%,
+        0 100%
+    );
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.featured-case-study .container .square3 .tag-label {
+    width: 70px;
+    height: 35px;
+    background-color: #e60024;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
