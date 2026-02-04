@@ -1,0 +1,115 @@
+
+.playfair-display-title {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 84;
+  font-style: normal;
+}
+
+.inter-para {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20;
+  font-style: normal;
+}
+
+
+.header {
+    position: relative;
+}
+
+.header-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.carousel-img {
+  height: 100vh;
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+  color: #fff;
+}
+
+.carousel-indicators .active {
+    background-color: red;
+}
+
+.form-card {
+  background: rgba(255, 255, 255, 0.15); /* transparent */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+
+.num-count .square{
+      height: 250px;
+      width: 250px;
+      background-color: gray;
+      border: 1px solid gray;
+      /* Cut bottom-right corner */
+      clip-path: polygon(
+          0 0,
+          100% 0,
+          100% 80%,
+          80% 100%,
+          0 100%
+      );
+  }
+.num-count .square .square2{
+      height: 248px;
+      width: 248px;
+      background-color: white;
+
+      /* Cut bottom-right corner */
+      clip-path: polygon(
+          0 0,
+          100% 0,
+          100% 80%,
+          80% 100%,
+          0 100%
+      );
+  }
+
+.Commerical-Constraction .content .form-check-input {
+    background-color: transparent !important;
+    border: 2px solid #ccc;
+    width: 25px;
+    height: 25px;
+}
+
+/* Change tick color */
+.Commerical-Constraction .content .form-check-input:checked[type="checkbox"] {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='red' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M13.485 1.929a.75.75 0 011.06 1.06l-8.25 8.25a.75.75 0 01-1.06 0L1.454 7.457a.75.75 0 111.06-1.06l3.25 3.25 7.72-7.718z'/%3e%3c/svg%3e");
+}
+
+.success-story .container .square{
+      height: 400px;
+      width: 350px;
+      background-color: #fff;
+      /* Cut bottom-right corner */
+      clip-path: polygon(
+          0 0,
+          100% 0,
+          100% 80%,
+          80% 100%,
+          0 100%
+      );
+  }
+
+
+
