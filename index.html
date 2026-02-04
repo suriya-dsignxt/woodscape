@@ -586,7 +586,7 @@
         <img src="images/company-banner.png" alt="" class="w-100 h-25">
      </section>
 
-     <section class="why-woodscape" style="background-color: #f4f4f4;">
+     <section class="why-woodscape pb-4" style="background-color: #f4f4f4;">
         <div class="container text-center pt-4">
             <h2 class="playfair-display-title" style="font-size: 50px;">Why Woodescape</h2>
             <p class="inter-para">Our approachcombines engineering precision, transparent processes, and long-term partnership to deliver dependable project outcomes.</p>
@@ -673,7 +673,7 @@
                 </div>
 
             </div>
-            <div class="container d-flex mt-5">
+            <div class="container d-flex flex-wrap mt-5">
                 <div class="square1 ms-5 mb-4">
                     <div class="square2">
                         <div class="tag-label text-start">
@@ -689,10 +689,51 @@
                     </div>
                 </div>
             </div>
+            <div class="container d-flex flex-wrap mt-5">
+                <div class="square4 ms-5 mb-4">
+                    <div class="square2">
+                        <div class="tag-label text-start">
+                           <h2 class="playfair-display-title text-danger mt-5 text-center" style="font-size: 50px;">Client Experience</h2>
+                           <p class="text-start mt-3 ms-4 me-4 inter-para">Woodescape delivered exactly what they promised. communication was clear and consistent througthout the project.
+                            Execution was disciplined, structured, and well mamnaged at every stage. Quality standards were never compromised from start to finish.
+                            The entire experience reflected professionalism and reliability.
+                           </p>
+                           <p class="fw-bold ms-4">Akshay - LMN Tech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="square5 ms-5 mb-4">
+                    <div class="square2">
+                        <div class="container">
+                            <h2 class="playfair-display-title text-white text-start mt-4 ms-4" style="font-size: 50px;">Request a <br>Similar Estimate</h2>
+                            <p class="inter-para text-start ms-4 mt-3 text-white">Planning a project? let's discuss your requirements and deliver a solution tailoredto your space.</p>
+                            <div class="d-flex justify-content-start ms-4">
+                                <button class="btn btn-light">Get in Estimate</button>
+                                <button class="btn btn-danger ms-2"><i class="bi bi-arrow-up-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
      </section>
+
+    <section class="founder container-fluid p-0">
+
+        <div class="video-box">
+
+            <video id="myVideo" poster="images/FounderImage.png">
+                <source src="video/sample.mp4" type="video/mp4">
+            </video>
+
+            <button class="play-btn" onclick="playVideo()">▶</button>
+
+        </div>
+
+    </section>
+
 
     <script src="js/bootstrap.min.js"></script>
     <script>
@@ -727,6 +768,13 @@
             });
         });
     </script>
+    <script>
+        function playVideo() {
+            const video = document.getElementById("myVideo");
+            video.play();
+        }
+    </script>
+
 
 </body>
 </html>

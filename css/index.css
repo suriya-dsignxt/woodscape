@@ -221,7 +221,7 @@
 }
 
 .featured-case-study .container .square1 {
-    height: 400px;
+    height: 370px;
     width: 525px;
     min-width: 350px;   /* ⭐ prevents shrinking */
     background-image: url("../images/before.png");
@@ -255,7 +255,7 @@
 }
 
 .featured-case-study .container .square3 {
-    height: 400px;
+    height: 370px;
     width: 525px;
     min-width: 350px;   /* ⭐ prevents shrinking */
     background-image: url("../images/after.png");
@@ -287,3 +287,85 @@
     font-weight: bold;
     transition: 0.3s;
 }
+
+.featured-case-study .container .square4 {
+    height: 370px;
+    width: 525px;
+    min-width: 350px;   /* ⭐ prevents shrinking */
+    background-image: url("../images/Quote.png");
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;     /* ⭐ keeps card size */
+
+    /* Cut bottom-right corner */
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 80%,
+        80% 100%,
+        0 100%
+    );
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.featured-case-study .container .square5 {
+    height: 370px;
+    width: 525px;
+    min-width: 350px;   /* ⭐ prevents shrinking */
+    background-color: black;
+    flex-shrink: 0;     /* ⭐ keeps card size */
+
+    /* Cut bottom-right corner */
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 80%,
+        80% 100%,
+        0 100%
+    );
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.founder .video-box {
+    position: relative;
+    width: 100%;
+}
+
+.founder .video-box video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.founder .video-box .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 30px;
+    color: black;
+    border: none;
+    cursor: pointer;
+
+    /* ⭐ Perfect Circle */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    /* Center icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Gradient */
+    background: linear-gradient(135deg, #ff416c, #efefef);
+
+    transition: 0.3s ease;
+}
+
+
