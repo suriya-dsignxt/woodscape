@@ -878,7 +878,7 @@
                         </video>
 
                         <!-- Mute Button -->
-                        <button class="mute-btn" onclick="toggleMute1()">
+                       <button class="mute-btn" onclick="toggleMute('cardVideo1','muteIcon1')">
                             <i id="muteIcon1" class="bi bi-volume-mute-fill"></i>
                         </button>
 
@@ -890,7 +890,7 @@
                     </video>
 
                     <!-- Mute Button -->
-                    <button class="mute-btn" onclick="toggleMute2()">
+                    <button class="mute-btn" onclick="toggleMute('cardVideo2','muteIcon2')">
                         <i id="muteIcon2" class="bi bi-volume-mute-fill"></i>
                     </button>
 
@@ -902,19 +902,7 @@
                     </video>
 
                     <!-- Mute Button -->
-                    <button class="mute-btn" onclick="toggleMute3()">
-                        <i id="muteIcon3" class="bi bi-volume-mute-fill"></i>
-                    </button>
-
-                    </div>
-                    <div class="square4">
-        
-                    <video id="cardVideo3" autoplay muted loop playsinline>
-                        <source src="./181376-866506956_small.mp4" type="video/mp4">
-                    </video>
-
-                    <!-- Mute Button -->
-                    <button class="mute-btn" onclick="toggleMute3()">
+                  <button class="mute-btn" onclick="toggleMute('cardVideo3','muteIcon3')">
                         <i id="muteIcon3" class="bi bi-volume-mute-fill"></i>
                     </button>
 
@@ -926,8 +914,20 @@
                     </video>
 
                     <!-- Mute Button -->
-                    <button class="mute-btn" onclick="toggleMute4()">
+                   <button class="mute-btn" onclick="toggleMute('cardVideo4','muteIcon4')">
                         <i id="muteIcon4" class="bi bi-volume-mute-fill"></i>
+                    </button>
+
+                    </div>
+                    <div class="square4">
+        
+                    <video id="cardVideo5" autoplay muted loop playsinline>
+                        <source src="./181376-866506956_small.mp4" type="video/mp4">
+                    </video>
+
+                    <!-- Mute Button -->
+                    <button class="mute-btn" onclick="toggleMute('cardVideo5','muteIcon5')">
+                        <i id="muteIcon5" class="bi bi-volume-mute-fill"></i>
                     </button>
 
                     </div>
@@ -1074,7 +1074,7 @@
         <p class="inter-para text-center text-white">Transform your ideas into reality with expert guidance,precise execution, and personalized solutions tailored to <br>
             your space. from planing to handover, we ensure clarity, quality and results you can trust.
         </p>
-        <div class="d-flex justify-content-center pt-5 flex-wrap">
+         <div class="d-flex justify-content-center pt-5 flex-wrap">
             <div class="mb-3">
                 <button class="btn btn-dark d-flex justify-content-between align-items-center px-3 me-4">
                     <span class="me-4"><i class="bi bi-telephone-fill"></i> Contact to an Expert</span>
@@ -1199,36 +1199,47 @@
         }
     </script>
     <script>
-        function toggleMute1() {
-            const video = document.getElementById("cardVideo1");
-            const icon = document.getElementById("muteIcon1");
 
-            video.muted = !video.muted;
+        function muteAllVideos() {
+            const videos = document.querySelectorAll("video");
+            const icons = document.querySelectorAll(".mute-btn i");
 
-            if(video.muted){
+            videos.forEach(video => video.muted = true);
+
+            icons.forEach(icon => {
                 icon.classList.remove("bi-volume-up-fill");
                 icon.classList.add("bi-volume-mute-fill");
-            } else {
-                icon.classList.remove("bi-volume-mute-fill");
-                icon.classList.add("bi-volume-up-fill");
-            }
+            });
         }
-        function toggleMute2() {
-            const video = document.getElementById("cardVideo2");
-            const icon = document.getElementById("muteIcon2");
 
-            video.muted = !video.muted;
+        function toggleMute(videoId, iconId) {
 
-            if(video.muted){
-                icon.classList.remove("bi-volume-up-fill");
-                icon.classList.add("bi-volume-mute-fill");
-            } else {
+            const video = document.getElementById(videoId);
+            const icon = document.getElementById(iconId);
+
+            if (video.muted) {
+
+                // mute all first
+                muteAllVideos();
+
+                // unmute selected video
+                video.muted = false;
                 icon.classList.remove("bi-volume-mute-fill");
                 icon.classList.add("bi-volume-up-fill");
+
+            } 
+            else {
+
+                // mute selected video
+                video.muted = true;
+                icon.classList.remove("bi-volume-up-fill");
+                icon.classList.add("bi-volume-mute-fill");
             }
+
         }
 
     </script>
+
 
 
 </body>
