@@ -27,6 +27,19 @@
     z-index: 999;
 }
 
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+    outline: none;
+    box-shadow: none;
+}
+
+
 .header .navbar .navbar-nav .nav-item a{
     color: #efefef;
 }
@@ -54,6 +67,55 @@
     background-color: black;
     color: #efefef;
 }
+
+.header .hero-overlay h2{
+    font-size: 70px;
+}
+
+@media screen and (max-width: 765px) {
+.header .hero-overlay h2{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+.header .hero-overlay h2{
+    font-size: 35px;
+  }
+}
+
+/* Mobile Menu Styling */
+@media (max-width: 991px) {
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 75%;
+        height: 100vh;
+        background: black;
+        padding-top: 80px;
+        transition: 0.4s ease;
+        z-index: 999;
+    }
+
+    /* When menu opens */
+    .mobile-menu.show {
+        left: 0;
+    }
+
+    /* Stack menu items */
+    .mobile-menu .navbar-nav {
+        align-items: flex-start !important;
+        padding-left: 20px;
+    }
+
+    .mobile-menu .nav-link {
+        color: white;
+        padding: 15px 0;
+    }
+}
+
 
 .carousel-img {
   height: 100vh;
