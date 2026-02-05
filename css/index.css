@@ -27,6 +27,34 @@
     z-index: 999;
 }
 
+.header .navbar .navbar-nav .nav-item a{
+    color: #efefef;
+}
+.header .navbar .navbar-nav .nav-item a:hover{
+    color: #e60024;
+}
+.header .navbar .navbar-nav .nav-item .red-btn{
+    background-color: #e60024;
+}
+
+.header .hero-overlay .white-btn{
+    background-color: #efefef;
+    margin-right: 8px;
+}
+.header .hero-overlay .red-btn{
+    background-color: #e60024;
+}
+.header .hero-overlay .white-btn:hover{
+    margin-right: 3px;
+}
+.header .hero-overlay .card form .red-btn{
+    color: #efefef;
+}
+.header .hero-overlay .card form .red-btn:hover{
+    background-color: black;
+    color: #efefef;
+}
+
 .carousel-img {
   height: 100vh;
   object-fit: cover;
@@ -118,9 +146,25 @@
 
 .sideimg-1{
     background-image:url('../images/constraction-banner.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
+
+.Commerical-Constraction .content .black-btn{
+    background-color: black;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.Commerical-Constraction .content .red-btn{
+    margin-top: 20px;
+    background-color: #e60024;
+}
+.Commerical-Constraction .content .black-btn:hover{
+    margin-right: 3px;
+}
+
 
 /* .sideimg-2{
     background-image:url('../images/interior-banner.png');
@@ -129,8 +173,8 @@
 
 /* ===== Card Design ===== */
 .success-story .container .square {
-    height: 400px;
-    width: 350px;
+    height: 450px;
+    width: 450px;
     min-width: 350px;   /* ⭐ prevents shrinking */
     background-color: #fff;
     flex-shrink: 0;     /* ⭐ keeps card size */
@@ -151,6 +195,19 @@
 /* Hover effect */
 .success-story .container .square:hover {
     transform: translateY(-5px);
+}
+
+.success-story .container .square .black-btn{
+    background-color: black;
+    color: #efefef;
+    margin-left: 25px;
+    margin-right: 8px;
+}
+.success-story .container .square .red-btn{
+    background-color: #e60024;
+}
+.success-story .container .square .black-btn:hover{
+    margin-right: 3px;
 }
 
 /* Image fix */
@@ -359,6 +416,16 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
+.featured-case-study .container .square5 .white-btn{
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.featured-case-study .container .square5 .red-btn{
+    background-color: #e60024;
+}
+.featured-case-study .container .square5 .white-btn:hover{
+    margin-right: 3px;
+}
 
 .founder .video-box {
     position: relative;
@@ -504,5 +571,22 @@
   background-image: url("../images/Expert\ Now\ BG.png");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 25px;
+  padding-bottom: 25px;
   
+}
+.faq{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.expert-now .btn-dark{
+    background-color: black;
+}
+.expert-now .btn-dark:hover{
+    background-color: #e60024;
+}
+
+.footer{
+    padding-top: 100px;
+    padding-bottom: 80px;
 }

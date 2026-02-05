@@ -31,33 +31,34 @@
                 </button>
 
                 <div class="collapse navbar-collapse me-4" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item me-3">
-                            <a class="nav-link text-danger" href="#">Home</a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
 
                         <li class="nav-item me-3">
-                            <a class="nav-link text-white" href="#">Services</a>
+                            <a class="nav-link" href="#">Services</a>
                         </li>
                          <li class="nav-item me-3">
-                            <a class="nav-link text-white" href="#">Projects</a>
+                            <a class="nav-link " href="#">Projects</a>
                         </li>
                          <li class="nav-item me-3">
-                            <a class="nav-link text-white" href="#">Industries</a>
+                            <a class="nav-link" href="#">Industries</a>
                         </li>
                          <li class="nav-item me-3">
-                            <a class="nav-link text-white" href="#">Why Woodscape</a>
+                            <a class="nav-link" href="#">Why Woodscape</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link text-white" href="#">Case Studies</a>
+                            <a class="nav-link " href="#">Case Studies</a>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link text-white" href="#">Request Estimate</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a class="btn btn-danger text-white" href="#"><i class="bi bi-arrow-up-right"></i></a>
-                        </li>
-                        
+                       <li class="nav-item me-3">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                Request Estimate 
+                                <span class="btn btn-danger rounded-0 text-white ms-3 red-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </a>
+                        </li>                        
                     </ul>
                 </div>
             </div>
@@ -104,10 +105,15 @@
                             From shell works to turnkey interiors, we build high-performance commercial spaces with engineering discipline and predictable timelines
                         </p>
 
-                        <div class="d-flex">
-                            <a href="" class="btn btn-light me-2">View Projects</a>
-                            <a class="btn btn-danger text-white" href="#"><i class="bi bi-arrow-up-right"></i></a>
-                        </div>
+                        <a href="#" class="d-flex text-decoration-none">
+                            <span class="btn btn-light rounded-0 white-btn">
+                                View Projects
+                            </span>
+                            <span class="btn btn-danger text-white rounded-0 red-btn">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </span>
+                        </a>
+
                     </div>
 
                     <!-- Right Form -->
@@ -132,7 +138,7 @@
                                     <textarea class="form-control" rows="3" placeholder="Message"></textarea>
                                 </div>
 
-                                <button class="btn btn-danger w-100 d-flex justify-content-between align-items-center px-3">
+                                <button class="btn red-btn w-100 d-flex justify-content-between align-items-center px-3 rounded-0">
                                     <span>Submit</span>
                                     <i class="bi bi-arrow-up-right"></i>
                                 </button>
@@ -179,85 +185,135 @@
    </section>
 
    <!-- commercial-constraction -->
-   <section class="Commerical-Constraction container-fluid d-flex flex-wrap">
-        <div class="sideimg sideimg-1">
-            
-        </div>
+    <section class="Commerical-Constraction container-fluid d-flex flex-wrap">
+
+        <div class="sideimg sideimg-1"></div>
+
         <div class="content">
-            <h2 class="ms-5 playfair-display-title" style="font-size: 70px; margin-top: 100px;">Commerical <br>Constraction</h2>
-            <p class="ms-5 mt-5 mb-5 inter-para ">End-to-end commercial builds with strict cost control, regulatory <br> compliance,and Milestone-based delivery </p>
-            <div class="form-check ms-5 align-items-center mt-3 md-2">
-                <input class="form-check-input mt-2" type="checkbox" value="" id="checkChecked" checked>
-                <label class="form-check-label fs-5 fw-bold ms-3" for="checkChecked">
+
+            <h2 class="ms-5 playfair-display-title" style="font-size: 70px; margin-top: 100px;">
+                Commercial <br> Construction
+            </h2>
+
+            <p class="ms-5 mt-5 mb-5 inter-para">
+                End-to-end commercial builds with strict cost control, regulatory
+                <br> compliance, and milestone-based delivery
+            </p>
+
+            <!-- Checkboxes -->
+            <div class="form-check ms-5 mt-3">
+                <input class="form-check-input mt-2" type="checkbox" id="check1" checked>
+                <label class="form-check-label fs-5 fw-bold ms-3" for="check1">
                     RCC and Shell Works
                 </label>
             </div>
-            <div class="form-check ms-5 align-items-center mt-3"md-2>
-                <input class="form-check-input mt-2" type="checkbox" value="" id="checkChecked" checked>
-                <label class="form-check-label fs-5 fw-bold ms-3" for="checkChecked">
+
+            <div class="form-check ms-5 mt-3">
+                <input class="form-check-input mt-2" type="checkbox" id="check2" checked>
+                <label class="form-check-label fs-5 fw-bold ms-3" for="check2">
                     BOQ Management
                 </label>
             </div>
-        <div class="form-check ms-5 align-items-center mt-3"md-2>
-                <input class="form-check-input mt-2" type="checkbox" value="" id="checkChecked" checked>
-                <label class="form-check-label fs-5 fw-bold ms-3" for="checkChecked">
+
+            <div class="form-check ms-5 mt-3">
+                <input class="form-check-input mt-2" type="checkbox" id="check3" checked>
+                <label class="form-check-label fs-5 fw-bold ms-3" for="check3">
                     MEP Coordination
                 </label>
             </div>
-            <div class="form-check ms-5 align-items-center mt-3"md-2>
-                <input class="form-check-input mt-2" type="checkbox" value="" id="checkChecked" checked>
-                <label class="form-check-label fs-5 fw-bold ms-3" for="checkChecked">
+
+            <div class="form-check ms-5 mt-3">
+                <input class="form-check-input mt-2" type="checkbox" id="check4" checked>
+                <label class="form-check-label fs-5 fw-bold ms-3" for="check4">
                     Approvals
                 </label>
             </div>
-            <div class="d-flex mt-5 ms-5">
-                <button type="submit" class="btn btn-dark w-75 px-3">
-                    <span>Request Constraction Estimate</span>
-                </button>
-                <a class="btn btn-danger text-white ms-2" href="#"><i class="bi bi-arrow-up-right"></i></a>
+
+            <!-- Buttons -->
+            <div class="ms-5 mt-5">
+                <a href="#" class="d-inline-flex text-decoration-none">
+
+                    <span class="btn btn-dark rounded-0 black-btn">
+                        Request Construction Estimate
+                    </span>
+
+                    <span class="btn btn-danger text-white rounded-0 red-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </span>
+
+                </a>
             </div>
+
         </div>
-   </section>
-   <!-- commercial interiers -->
-   <section class="Commerical-Constraction container-fluid d-flex flex-wrap">
+
+    </section>
+
+    <!-- Commercial Interiors -->
+    <section class="Commerical-Constraction container-fluid d-flex flex-wrap">
+
         <div class="sideimg">
-            <img src="images/interior-banner.png" alt="" width="820px" class="h-100">
+            <img src="images/interior-banner.png" alt="Commercial Interiors" class="w-100 h-100 object-fit-cover">
         </div>
+
         <div class="content">
-            <h2 class="ms-5 playfair-display-title" style="font-size: 70px; margin-top: 100px;">Commercial <br> Interiors</h2>
-            <p class="ms-5 mt-5 mb-5 inter-para">Turnkey office, retail, and hospitality interiors designed to perform, <br> impress, and open on schedule. </p>
-            <div class="form-check ms-5 align-items-center mt-3 md-2">
-                <input class="form-check-input mt-2" type="checkbox" value="" id="checkChecked" checked>
-                <label class="form-check-label fs-5 fw-bold ms-3" for="checkChecked">
+
+            <h2 class="ms-5 playfair-display-title" style="font-size: 70px; margin-top: 100px;">
+                Commercial <br> Interiors
+            </h2>
+
+            <p class="ms-5 mt-5 mb-5 inter-para">
+                Turnkey office, retail, and hospitality interiors designed to perform,
+                <br> impress, and open on schedule.
+            </p>
+
+            <!-- Checkboxes -->
+            <div class="form-check ms-5 mt-3">
+                <input class="form-check-input mt-2" type="checkbox" id="interior1" checked>
+                <label class="form-check-label fs-5 fw-bold ms-3" for="interior1">
                     Fit-outs and joinery
                 </label>
             </div>
-            <div class="form-check ms-5 align-items-center mt-3"md-2>
-                <input class="form-check-input mt-2" type="checkbox" value="" id="checkChecked" checked>
-                <label class="form-check-label fs-5 fw-bold ms-3" for="checkChecked">
+
+            <div class="form-check ms-5 mt-3">
+                <input class="form-check-input mt-2" type="checkbox" id="interior2" checked>
+                <label class="form-check-label fs-5 fw-bold ms-3" for="interior2">
                     FF&E procurement
                 </label>
             </div>
-        <div class="form-check ms-5 align-items-center mt-3"md-2>
-                <input class="form-check-input mt-2" type="checkbox" value="" id="checkChecked" checked>
-                <label class="form-check-label fs-5 fw-bold ms-3" for="checkChecked">
+
+            <div class="form-check ms-5 mt-3">
+                <input class="form-check-input mt-2" type="checkbox" id="interior3" checked>
+                <label class="form-check-label fs-5 fw-bold ms-3" for="interior3">
                     Brand compliance
                 </label>
             </div>
-            <div class="form-check ms-5 align-items-center mt-3"md-2>
-                <input class="form-check-input mt-2" type="checkbox" value="" id="checkChecked" checked>
-                <label class="form-check-label fs-5 fw-bold ms-3" for="checkChecked">
-                    Fast delivery 
+
+            <div class="form-check ms-5 mt-3">
+                <input class="form-check-input mt-2" type="checkbox" id="interior4" checked>
+                <label class="form-check-label fs-5 fw-bold ms-3" for="interior4">
+                    Fast delivery
                 </label>
             </div>
-            <div class="d-flex mt-5 ms-5">
-                <button type="submit" class="btn btn-dark w-75 px-3">
-                    <span>Request Interiors Estimate</span>
-                </button>
-                <a class="btn btn-danger text-white ms-2" href="#"><i class="bi bi-arrow-up-right"></i></a>
+
+            <!-- Buttons -->
+            <div class="ms-5 mt-5">
+                <a href="#" class="d-inline-flex text-decoration-none">
+
+                    <span class="btn btn-dark rounded-0 black-btn">
+                        Request Interiors Estimate
+                    </span>
+
+                    <span class="btn btn-danger text-white rounded-0 red-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </span>
+
+                </a>
             </div>
+
         </div>
-   </section>
+
+    </section>
+
     <!-- success-story -->
    <section class="success-story pb-5" style="background-color: #f4f4f4;">
          <!-- Heading Row -->
@@ -288,54 +344,213 @@
             <div class="square-slider container-fluid">
 
                 <div class="scroll-row">
-                    <div class="square ms-5 mb-4">
+                    <div class="square mb-4">
                         <img src="images/ABC Infrastructure.png" alt="" height="150px" width="100%">
                         <div class="square2">
-                            <h2 class="text-center mt-4" style="font-size: 25px;">ABC Infrastructure</h2>
-                            <p class="text-center">Sector : Real Estate</p>
-                            <p class="text-center">Area  :  Central Texas</p>
-                            <p class="text-center">Timeline : Jan 2024 - Jun 2024</p>
-                            <p class="ms-3 me-3">Delivered 20% cost savings through process optimization</p>
+                            <h2 class="text-start  mt-4 mb-3" style="font-size: 25px;margin-left: 42px;">
+                                ABC Infrastructure
+                            </h2>
+
+                            <div class="container">
+                                
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Sector</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Real Estate</div>
+                                </div>
+
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Area</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Central Texas</div>
+                                </div>
+
+                                <div class="row justify-content-start" style="margin-left: 16px;">
+                                    <div class="col-4 text-start fw-semibold">Timeline</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Jan 2024 - Jun 2024</div>
+                                </div>
+
+                            </div>
+
+                            <p class="text-start ms-3 px-3">
+                                Delivered 20% cost savings through process optimization
+                            </p>
+                            <a href="#" class="d-flex text-decoration-none">
+                                <span class="btn btn-light rounded-0 black-btn">
+                                    View Case Studies
+                                </span>
+                                <span class="btn btn-danger text-white rounded-0 red-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="square ms-5 mb-4">
                         <img src="images/YB Retail Group.png" alt="" height="150px" width="100%">
                         <div class="square2">
-                            <h2 class="text-center mt-4" style="font-size: 25px;">YB Retail Group</h2>
-                            <p class="text-center">Sector : Real Estate</p>
-                            <p class="text-center">Area  :  Central Texas</p>
-                            <p class="text-center">Timeline : Jan 2024 - Jun 2024</p>
-                            <p class="ms-3 me-3">Delivered 20% cost savings through process optimization</p>
+                             <h2 class="text-start  mt-4 mb-3" style="font-size: 25px;margin-left: 42px;">
+                                ABC Infrastructure
+                            </h2>
+
+                            <div class="container">
+                                
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Sector</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Real Estate</div>
+                                </div>
+
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Area</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Central Texas</div>
+                                </div>
+
+                                <div class="row justify-content-start" style="margin-left: 16px;">
+                                    <div class="col-4 text-start fw-semibold">Timeline</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Jan 2024 - Jun 2024</div>
+                                </div>
+
+                            </div>
+
+                            <p class="text-start ms-3 px-3">
+                                Delivered 20% cost savings through process optimization
+                            </p>
+                            <a href="#" class="d-flex text-decoration-none">
+                                <span class="btn btn-light rounded-0 black-btn">
+                                    View Case Studies
+                                </span>
+                                <span class="btn btn-danger text-white rounded-0 red-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="square ms-5 mb-4">
                         <img src="images/lmn tech solutions.png" alt="" height="150px" width="100%">
                         <div class="square2">
-                            <h2 class="text-center mt-4" style="font-size: 25px;">LMN Tech Solutions</h2>
-                            <p class="text-center">Sector : Real Estate</p>
-                            <p class="text-center">Area  :  Central Texas</p>
-                            <p class="text-center">Timeline : Jan 2024 - Jun 2024</p>
-                            <p class="ms-3 me-3">Delivered 20% cost savings through process optimization</p>
+                            <h2 class="text-start  mt-4 mb-3" style="font-size: 25px;margin-left: 42px;">
+                                ABC Infrastructure
+                            </h2>
+
+                            <div class="container">
+                                
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Sector</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Real Estate</div>
+                                </div>
+
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Area</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Central Texas</div>
+                                </div>
+
+                                <div class="row justify-content-start" style="margin-left: 16px;">
+                                    <div class="col-4 text-start fw-semibold">Timeline</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Jan 2024 - Jun 2024</div>
+                                </div>
+
+                            </div>
+
+                            <p class="text-start ms-3 px-3">
+                                Delivered 20% cost savings through process optimization
+                            </p>
+                            <a href="#" class="d-flex text-decoration-none">
+                                <span class="btn btn-light rounded-0 black-btn">
+                                    View Case Studies
+                                </span>
+                                <span class="btn btn-danger text-white rounded-0 red-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                      <div class="square ms-5 mb-4">
                         <img src="images/lmn tech solutions.png" alt="" height="150px" width="100%">
                         <div class="square2">
-                            <h2 class="text-center mt-4" style="font-size: 25px;">LMN Tech Solutions</h2>
-                            <p class="text-center">Sector : Real Estate</p>
-                            <p class="text-center">Area  :  Central Texas</p>
-                            <p class="text-center">Timeline : Jan 2024 - Jun 2024</p>
-                            <p class="ms-3 me-3">Delivered 20% cost savings through process optimization</p>
+                             <h2 class="text-start  mt-4 mb-3" style="font-size: 25px;margin-left: 42px;">
+                                ABC Infrastructure
+                            </h2>
+
+                            <div class="container">
+                                
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Sector</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Real Estate</div>
+                                </div>
+
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Area</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Central Texas</div>
+                                </div>
+
+                                <div class="row justify-content-start" style="margin-left: 16px;">
+                                    <div class="col-4 text-start fw-semibold">Timeline</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Jan 2024 - Jun 2024</div>
+                                </div>
+
+                            </div>
+
+                            <p class="text-start ms-3 px-3">
+                                Delivered 20% cost savings through process optimization
+                            </p>
+                            <a href="#" class="d-flex text-decoration-none">
+                                <span class="btn btn-light rounded-0 black-btn">
+                                    View Case Studies
+                                </span>
+                                <span class="btn btn-danger text-white rounded-0 red-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="square ms-5 mb-4">
                         <img src="images/lmn tech solutions.png" alt="" height="150px" width="100%">
                         <div class="square2">
-                            <h2 class="text-center mt-4" style="font-size: 25px;">LMN Tech Solutions</h2>
-                            <p class="text-center">Sector : Real Estate</p>
-                            <p class="text-center">Area  :  Central Texas</p>
-                            <p class="text-center">Timeline : Jan 2024 - Jun 2024</p>
-                            <p class="ms-3 me-3">Delivered 20% cost savings through process optimization</p>
+                             <h2 class="text-start  mt-4 mb-3" style="font-size: 25px;margin-left: 42px;">
+                                ABC Infrastructure
+                            </h2>
+                            <div class="container">
+                                
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Sector</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Real Estate</div>
+                                </div>
+
+                                <div class="row justify-content-start ms-3">
+                                    <div class="col-4 text-start fw-semibold">Area</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Central Texas</div>
+                                </div>
+
+                                <div class="row justify-content-start" style="margin-left: 16px;">
+                                    <div class="col-4 text-start fw-semibold">Timeline</div>
+                                    <div class="col-1 text-center">:</div>
+                                    <div class="col-5">Jan 2024 - Jun 2024</div>
+                                </div>
+
+                            </div>
+
+                            <p class="text-start ms-3 px-3">
+                                Delivered 20% cost savings through process optimization
+                            </p>
+                            <a href="#" class="d-flex text-decoration-none">
+                                <span class="btn btn-light rounded-0 black-btn">
+                                    View Case Studies
+                                </span>
+                                <span class="btn btn-danger text-white rounded-0 red-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -611,10 +826,14 @@
                         <div class="container">
                             <h2 class="playfair-display-title text-white text-start mt-4 ms-4" style="font-size: 50px;">Request a <br>Similar Estimate</h2>
                             <p class="inter-para text-start ms-4 mt-3 text-white">Planning a project? let's discuss your requirements and deliver a solution tailoredto your space.</p>
-                            <div class="d-flex justify-content-start ms-4">
-                                <button class="btn btn-light">Get in Estimate</button>
-                                <button class="btn btn-danger ms-2"><i class="bi bi-arrow-up-right"></i></button>
-                            </div>
+                            <a href="#" class="d-flex text-decoration-none">
+                                <span class="btn btn-light rounded-0 white-btn">
+                                    View Projects
+                                </span>
+                                <span class="btn btn-danger text-white rounded-0 red-btn">
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -715,7 +934,7 @@
 
         </div>
     </section>
-
+    <!-- faq -->
     <section class="faq container">
             <h2 class="playfair-display-title" style="font-size: 50px;">Frequently Asked Questions</h2>
             <p class="inter-para">
@@ -847,7 +1066,7 @@
 
        
     </section>
-
+    <!-- expert now -->
     <section class="expert-now container-fluid pb-5">
         <h2 class="playfair-display-title mt-5 text-center pt-5 text-white" style="font-size: 50px;">Get an Expert Now !</h2>
         <p class="inter-para text-center text-white">Transform your ideas into reality with expert guidance,precise execution, and personalized solutions tailored to <br>
@@ -865,7 +1084,7 @@
         </div>
        
     </section>
-
+    <!-- footer -->
     <section class="footer container-fluid" style="background-color: #0e1423;">
         <div class="container d-flex border-bottom pb-3 justify-content-between">
             <div class="logocompany mt-3">
